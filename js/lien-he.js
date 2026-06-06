@@ -10,6 +10,10 @@ form.addEventListener("submit", function(event){
 // Tự động điền sản phẩm
 const productInput = document.getElementById("product-input");
 const productName = localStorage.getItem("productName");
+
 if(productName){
     productInput.value = productName;
+
+    // xoá luôn để không bị dùng lại lần sau
+    localStorage.removeItem("productName");
 }
