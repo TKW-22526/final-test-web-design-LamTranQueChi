@@ -320,9 +320,15 @@ textarea.form-control{
     }
 
     /* Footer */
+
+    .footer{
+        padding-top:45px;
+    }
+
     .footer-container{
-        grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
-        gap:20px;
+        grid-template-columns:repeat(2,1fr);
+        gap:25px;
+        padding:0 20px 25px;
     }
 
     .footer-box{
@@ -331,10 +337,28 @@ textarea.form-control{
     }
 
     .footer-box h2{
-        font-size: 32px;
+        font-size:26px;
+        margin-bottom:10px;
     }
 
     .footer-box h3{
-        font-size: 20px;
+        font-size:18px;
+        margin-bottom:12px;
+    }
+
+    .footer-box p{
+        font-size:14px;
+        line-height:1.7;
+        max-width:100%;
+    }
+
+    .footer-box a{
+        font-size:14px;
+    }
+
+    .footer-bottom{
+        padding:15px;
+        font-size:12px;
+        text-align:center;
     }
 }
