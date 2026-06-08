@@ -346,11 +346,13 @@ margin-bottom:50px;
 
     /* Footer */
     .footer-container{
-        grid-template-columns: 1fr;
-        gap: 40px;
-        padding: 0 20px 40px;
+        grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+        gap:20px;
     }
-
+    .footer-box{
+        text-align:left;
+        align-items:flex-start;
+    }
     .footer-box h2{
         font-size: 32px;
     }

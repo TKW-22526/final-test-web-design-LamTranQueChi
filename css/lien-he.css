@@ -321,8 +321,13 @@ textarea.form-control{
 
     /* Footer */
     .footer-container{
-        grid-template-columns: 1fr;
-        padding: 0 20px 30px;
+        grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+        gap:20px;
+    }
+
+    .footer-box{
+        text-align:left;
+        align-items:flex-start;
     }
 
     .footer-box h2{
